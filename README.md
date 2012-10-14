@@ -6,3 +6,10 @@ Report in the course CDT403 - Research Methods at Mälardalens University in Swe
 
 ### How to generate PDF in Ubuntu 12.04
 
+```
+cd \directory\with\.tex\file
+pdflatex sigproc-sp.tex
+bibtex sigproc-sp.aux
+pdflatex sigproc-sp.tex
+pdflatex sigproc-sp.tex
+```
