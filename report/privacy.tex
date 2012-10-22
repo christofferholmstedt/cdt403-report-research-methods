@@ -28,7 +28,7 @@ Raynes-Goldie found that participants in her study used direct URLs to images on
 
 With the centralised systems covered it's time to look at the decentralised systems.
 The basics of a decentralised system are the lack of central nodes, a central authority that controls the network and the ability to scale very well.
-In \textit{"Friendly Surveillance - A New Adversary Model for Privacy in Decentralized Online Social Networks"} \cite{greschbach2012} the author defines services such as Facebook and Google plus to be a "Social Network Service (SNS)" and decentralised versions are named "Decentralised Online Social Network (DSON)".
+In \textit{"Friendly Surveillance - A New Adversary Model for Privacy in Decentralized Online Social Networks"} \cite{greschbach2012} the authors defines services such as Facebook and Google plus to be a "Social Network Service (SNS)" and decentralised versions are named "Decentralised Online Social Network (DSON)".
 It is important to remember that traditional SNS have been online for several years but it's only recent years that researcher has started to look at DSONs.
 The move from a SNS to a DSON effectively remove the earlier mentioned institutional privacy problems but on the downside also introduce several new problems.
 
@@ -39,15 +39,23 @@ The problem here now arise that a friend of you could monitor the traffic that c
 Even if the information is encrypted metadata is available such as how much disk space the information takes and how often a specific node requests similiar data.
 With the information about disk space usage your friend could find out if it's text, music or videos that are shared.
 With the information about how frequently a node requests some information and during which hours of the day the sender could compose a pretty clear picture on the behaviour of that node \cite{greschbach2012}.
+It's also in this area Greschbach et al \cite{greschbach2012} comes to the conclusion that a good technical solution that doesn't give away to much information in metadata is needed.
 
 The second question is about trust.
-How do I as a user trust another user.
+How do a user trust another user.
 In a centralised system users trust the centralised service as an authority or "third-party" so if user A sees user B online user A can in some sense be sure that it's user B that is online.
 This is because users indirectly approve of the authentication system used by the service.
 In decentralised systems there is no authority that vouch for someone else instead decentralised system can use somekind of reputation.
-User B could choose to up the reputation of User A.
+User B could choose to improve the reputation of User A.
 If then User C comes in contact with User A the reputation set by User B (together with many others) gives a representation on how well User A behaves in the network and how much trust can be given to User A.
 The problem with a system like this is that reputation or trust is often depending on context \cite{mondal2006}.
 User B might trust User A when it comes to talking about some soccer games that took place yesterday but User B might not trust User A when it comes to talking about private information such as medical status.
 Another aspect is that the context also differs between users.
-A generalization in a reputation system explained above clearly has it drawbacks and it's in this area , "effective trust models" Mondal et al \cite{mondal2006} suggests that the research community can contribute.
+A generalization in a reputation system as explained above clearly has it drawbacks and it's in this area , "effective trust models" Mondal et al \cite{mondal2006} suggests that the research community can contribute.
+
+Tightly coupled with trust is also accountablity.
+If one user in the network has bad behaviour it will probably be easy to deny that user further access to whatever resource is requested.
+Though one of the main features of many decentralised systems is the possibility for a user to be completely anonymous.
+The possiblity to be completely anonymous makes it possible for the user that has bad behaviour in the network to act as a new user when the first one has been blocked by a noticeable amount of users.
+In the end to introduce accountability to a decentralised system might not what you want to do due to low amount of malicous users \cite{mondal2006}.
+
