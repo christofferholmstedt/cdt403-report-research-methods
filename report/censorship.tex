@@ -8,9 +8,9 @@ As it usually goes with potential flaws, prevention of the harmful data is being
 Vast number of recent examples of Internet censorship used to limit the freedom of speech can be found in China \cite{canaves}, Libya \cite{dianotti2011} and many other countries. 
 This leads to defining a potential threat model that could affect the computer networks and limit the information flow between the users - a censorship threat model.
 
-In this paper, authors want to present how the censorship threat model can affect the computer networks, and how centralised and decentralised architectures deal with the it.
+In this paper, authors want to present how the censorship threat model can affect the computer networks, and how centralised and decentralised architectures deal with it.
 The easiest way to present that is through study of the most popular WWW social networking sites, like Facebook, Twitter and Google Plus as examples of centralised systems and try to introduce an efficient way for dealing with censorship in this types of network architecture.
-On the other side there are many applications on the Internet that relay on distributed architecture.
+On the other side there are many applications on the Internet that rely on distributed architecture.
 Those are known as P2P (peer to peer) applications, and by studying them we can see how decentralised architecture deal with the censorship threat model.
 
 During the demonstrations in Egypt against their government and the president \cite{web:scialnetworkcriticalmass}, people were using the most popular networks for sharing information.
@@ -42,7 +42,7 @@ In contrast to the centralised network model we have the decentralised or distri
 As previously stated the most significant difference of this network architecture compared with the centralised one is the absence of a central point for supporting the communication with the clients. 
 
 In order to present how decentralised network architectures can potentially avoid the censorship threat model, we are going to discuss Freenet \cite{clarke2001} a typical pure peer-to-peer \cite{web:peertopeer} type of decentralised network architecture, which relies on anonymity.
-When it was reviled for the first time, its founders argued that the anonymity of the system provides a true freedom of speech.
+When it was revealed for the first time, its founders argued that the anonymity of the system provides a true freedom of speech.
 The core building units of this network architecture are equipotent peers.
 In order to be able to communicate with each other, the peers or in this case they are called "nodes" need to maintain local table with addresses to their neighbors.
 All of the nodes in the system have equal privileges, and therefore there is no need for a single central point.
@@ -53,14 +53,14 @@ As described in paper \cite{clarke2001}, the architecture of this application im
 In the initial version of the application, the data was distributed across the system, but it still was stored in one piece.
 Even though the data is encrypted, because it is stored in one place there was a potential risk that this data could be decrypted.
 If the data were to be some sensitive information, its holder may be subjected to prosecution.
-For that purpose, a multiple algorithms have been proposed in order to improve the robustness and resistance to censorship.
+For that purpose, multiple algorithms have been proposed in order to improve the robustness and resistance to censorship.
 One of the most popular one was proposed in Regine Endsuleit and Thilo Mie paper \cite{endsuleit2006}. 
 
 In their paper they proposed a new distributed way of storing the data across the system.
 Instead of the traditional way of storing the data in one place, now the data has been divided into small chunks, that are then distributed and stored among the clients.
 In addition to decentralised storing of the information, also there is a lot of redundancy in the system.
-A single chink of information is stored on multiple clients.
+A single chunk of information is stored on multiple clients.
 This means that a single chunk of information is available from many places.
 All these features are introduced into the network in order to increase the fault tolerance of the system to various threat models, among which is our censorship threat model.
 This implies that in order to retrieve some information, one must first find all the chunks and then try to reassemble them.
-Duo to the decentralization of the system, and distributed information among the peers, this network architecture with these characteristics is very hard to be censored.
+Due to the decentralisation of the system, and distributed information among the peers, this network architecture with these characteristics is very hard to be censored.
